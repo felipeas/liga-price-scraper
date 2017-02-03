@@ -8,7 +8,7 @@ app.get('/price', function(req, res) {
         if (err) console.log(err)
         
         if (!precos) {
-            res.status(404).send('Not found')
+            res.status(404).send('not found')
         }
 
         var p = precos.trim().split('\n')

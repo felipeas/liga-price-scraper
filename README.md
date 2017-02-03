@@ -14,3 +14,7 @@ npm start
 curl localhost:3000/price?card=Tarmogoyf
 ```
 
+## todo
+
+- [ ] heroku deploy
+- [ ] tests

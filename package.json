@@ -1,0 +1,15 @@
+{
+  "name": "liga-price-crawler",
+  "version": "1.0.0",
+  "description": "nah",
+  "main": "server.js",
+  "scripts": {
+    "test": "no"
+  },
+  "author": "Felipe Silva",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.14.1",
+    "x-ray": "^2.3.1"
+  }
+}

@@ -5,14 +5,14 @@ var x = require('x-ray')()
 var port = process.env.PORT || 3000;
 
 app.get('/price', function(req, res) {
-    var p = x('https://www.ligamagic.com.br/?view=cards/card&card=' + encodeURIComponent(req.query.card), '.precos')(function (err, precos) {
+    var p = x('https://www.ligamagic.com.br/?view=cards/card&card=' + encodeURIComponent(req.query.card), '.precos')(function (err, prices) {
         if (err) console.log(err)
         
-        if (!precos) {
+        if (!prices) {
             res.status(404).send('not found')
         }
 
-        var p = precos.trim().split('\n')
+        var p = prices.trim().split('\n')
         var obj = {
             'Low': p[0].trim(),
             'Avg': p[1].trim(),

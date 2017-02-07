@@ -27,6 +27,8 @@ app.get('/price', function(req, res) {
             'Avg': p[1].trim(),
             'High': p[2].trim()
         };
+        
+        res.setHeader('Content-Type', 'application/json');
         res.send(JSON.stringify(obj))
     })
 })

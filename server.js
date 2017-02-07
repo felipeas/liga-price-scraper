@@ -4,6 +4,15 @@ var stream = require('stream')
 var x = require('x-ray')()
 var port = process.env.PORT || 3000;
 
+app.use(function (err, req, res, next) {
+    console.error(err.stack)
+    res.status(500).send('mehh')
+})
+
+app.get("/", function(req, res) {
+    res.send('not the droids you\'re looking for')
+});
+
 app.get('/price', function(req, res) {
     var p = x('https://www.ligamagic.com.br/?view=cards/card&card=' + encodeURIComponent(req.query.card), '.precos')(function (err, prices) {
         if (err) console.log(err)

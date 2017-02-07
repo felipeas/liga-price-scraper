@@ -16,5 +16,5 @@ curl localhost:3000/price?card=Tarmogoyf
 
 ## todo
 
-- [ ] heroku deploy
+- [ ] switch to now
 - [ ] tests

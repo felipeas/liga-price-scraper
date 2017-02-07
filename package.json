@@ -4,7 +4,8 @@
   "description": "nah",
   "main": "server.js",
   "scripts": {
-    "test": "no"
+    "test": "no",
+    "deploy": "git push heroku master"
   },
   "author": "Felipe Silva",
   "license": "MIT",

@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "no",
-    "deploy": "git push heroku master"
+    "deploy": "git push heroku master",
+    "start" : "node server.js"
   },
   "author": "Felipe Silva",
   "license": "MIT",

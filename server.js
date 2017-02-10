@@ -1,8 +1,11 @@
 var express = require('express')
 var app = express()
+var cors = require('cors')
 var stream = require('stream')
 var x = require('x-ray')()
 var port = process.env.PORT || 3000;
+
+app.use(cors())
 
 app.use(function (err, req, res, next) {
     console.error(err.stack)

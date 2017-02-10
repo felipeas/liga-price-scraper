@@ -11,6 +11,7 @@
   "author": "Felipe Silva",
   "license": "MIT",
   "dependencies": {
+    "cors": "^2.8.1",
     "express": "^4.14.1",
     "x-ray": "^2.3.1"
   }

@@ -16,5 +16,5 @@ curl localhost:3000/price?card=Tarmogoyf
 
 ## todo
 
-- [ ] switch to now
+- [ ] switch to micro
 - [ ] tests

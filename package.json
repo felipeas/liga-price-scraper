@@ -2,17 +2,20 @@
   "name": "liga-price-crawler",
   "version": "1.0.0",
   "description": "nah",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "test": "no",
-    "deploy": "git push heroku master",
-    "start" : "node server.js"
+    "start": "micro",
+    "dev": "micro-dev"
   },
   "author": "Felipe Silva",
   "license": "MIT",
   "dependencies": {
-    "cors": "^2.8.1",
-    "express": "^4.14.1",
-    "x-ray": "^2.3.1"
+    "micro-cors": "^0.0.4",
+    "microrouter": "^2.2.3",
+    "osmosis": "^1.1.4"
+  },
+  "devDependencies": {
+    "micro-dev": "^1.2.3",
+    "prettier": "^1.7.0"
   }
 }
